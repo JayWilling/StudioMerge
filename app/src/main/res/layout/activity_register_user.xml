@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bgframe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:background="@android:color/secondary_text_light">
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <!-- logo -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="103dp"
+            android:layout_gravity="center"
+            android:background="@drawable/finallogo"
+            android:paddingTop="0dp"
+            android:paddingBottom="20dp" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="Choose User Type"
+            android:textAlignment="center"
+            android:textColor="#242424"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <!-- Donor Button -->
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onDonorRegister"
+            android:paddingLeft="150dp"
+            android:paddingRight="150dp"
+            android:text="Donor"
+            android:textSize="15dp" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Charity Button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="onCharityRegister"
+            android:paddingLeft="146dp"
+            android:paddingRight="146dp"
+            android:text="Charity"
+            android:textSize="15dp" />
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <!-- Back to Login -->
+        <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:onClick="loginActivity"
+            android:paddingTop="0dp"
+            android:text="Already a member? Login"
+            android:textSize="16dip"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
